@@ -1,0 +1,14 @@
+C:\Users\Klaudia\Desktop\IBM\projekt_WJP\asap\asap\bin\Debug\asap.exe.config
+C:\Users\Klaudia\Desktop\IBM\projekt_WJP\asap\asap\bin\Debug\asap.exe
+C:\Users\Klaudia\Desktop\IBM\projekt_WJP\asap\asap\bin\Debug\asap.pdb
+C:\Users\Klaudia\Desktop\IBM\projekt_WJP\asap\asap\obj\Debug\asap.menu.resources
+C:\Users\Klaudia\Desktop\IBM\projekt_WJP\asap\asap\obj\Debug\asap.education.resources
+C:\Users\Klaudia\Desktop\IBM\projekt_WJP\asap\asap\obj\Debug\asap.Properties.Resources.resources
+C:\Users\Klaudia\Desktop\IBM\projekt_WJP\asap\asap\obj\Debug\asap.tutorial.resources
+C:\Users\Klaudia\Desktop\IBM\projekt_WJP\asap\asap\obj\Debug\asap.csproj.GenerateResource.cache
+C:\Users\Klaudia\Desktop\IBM\projekt_WJP\asap\asap\obj\Debug\asap.csproj.CoreCompileInputs.cache
+C:\Users\Klaudia\Desktop\IBM\projekt_WJP\asap\asap\obj\Debug\asap.exe
+C:\Users\Klaudia\Desktop\IBM\projekt_WJP\asap\asap\obj\Debug\asap.pdb
+C:\Users\Klaudia\Desktop\IBM\projekt_WJP\asap\asap\obj\Debug\asap.csprojAssemblyReference.cache
+C:\Users\Klaudia\Desktop\IBM\projekt_WJP\asap\asap\obj\Debug\asap.game.resources
+C:\Users\Klaudia\Desktop\IBM\projekt_WJP\asap\asap\obj\Debug\asap.finish.resources
