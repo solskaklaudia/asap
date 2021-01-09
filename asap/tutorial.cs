@@ -4,22 +4,25 @@ using System.Windows.Forms;
 
 namespace asap
 {
+    /// <summary>
+    /// Partial class <c>tutorial</c> extending Form for tutorial section of the game
+    /// </summary>
     public partial class tutorial : Form
     {
-        public tutorial()
-        {
-            InitializeComponent();
-        }
-
+        /// <summary>
+        /// <c>tutorial</c> constructor, sets the buttons text and loads background image
+        /// </summary>
         public tutorial(menu Menu, string language)
         {
             InitializeComponent();
+
             MenuWindow = Menu;
             lang = language;
 
-            file_path = "..\\..\\graphics\\tutorial\\" + lang + "\\";
-            this.BackgroundImage = Image.FromFile(file_path + tutorial_count.ToString() + ".png");
+            file_path = "..\\..\\res\\graphics\\tutorial\\" + lang + "\\"; // sets file path for graphics resources
+            this.BackgroundImage = Image.FromFile(file_path + tutorial_count.ToString() + ".jpg"); // loads tutorial background image
 
+            // sets buttons text depending on the language
             if (lang == "pl")
             {
                 tutorialButtonNext.Text = "Dalej";
@@ -32,42 +35,33 @@ namespace asap
             }
         }
 
-        private void tutorialButtonExit_Click(object sender, EventArgs e)
-        {
-            MenuWindow.Visible = MenuWindow.Enabled = true;
-            MenuWindow.timer1.Enabled = true;
-            this.Close();
-        }
-
+        /// <summary>
+        /// Method <c>tutorialButtonNext_Click</c> for next tutorial page functionality
+        /// </summary>
         private void tutorialButtonNext_Click(object sender, EventArgs e)
         {
-            // loads next tutorial image and enables/disables needed buttons
-            tutorial_count++;
+            tutorial_count++; // increasing tutorial page count
 
-            if (tutorial_count == 1)
-            {
-                tutorialButtonPrevious.Visible = tutorialButtonPrevious.Enabled = false;
-                tutorialButtonNext.Visible = tutorialButtonNext.Enabled = true;
-            }
-            else if (tutorial_count == 2)
-            {
-                tutorialButtonPrevious.Visible = tutorialButtonPrevious.Enabled = true;
-            }
-            else if (tutorial_count >= 3)
-            {
-                tutorialButtonNext.Visible = tutorialButtonNext.Enabled = false;
-            }
-
-            string file_path = "..\\..\\graphics\\tutorial\\" + lang + "\\";
-            this.BackgroundImage = Image.FromFile(file_path + tutorial_count.ToString() + ".png");
+            setButtonsAndImage();
         }
 
+        /// <summary>
+        /// Method <c>tutorialButtonPrevious_Click</c> for previous tutorial page functionality
+        /// </summary>
         private void tutorialButtonPrevious_Click(object sender, EventArgs e)
         {
-            // loads previous tutorial image and enables/disables needed buttons
-            tutorial_count--;
+            tutorial_count--; // decreasing tutorial page count
 
-            if (tutorial_count <= 1)
+            setButtonsAndImage();
+        }
+
+        /// <summary>
+        /// Method <c>setButtonsAndImage</c> loads tutorial image and enables/disables needed buttons
+        /// </summary>
+        private void setButtonsAndImage()
+        {
+            // enabled/disabled buttons depending on tutorial page number
+            if (tutorial_count == 1)
             {
                 tutorialButtonPrevious.Visible = tutorialButtonPrevious.Enabled = false;
                 tutorialButtonNext.Visible = tutorialButtonNext.Enabled = true;
@@ -80,15 +74,25 @@ namespace asap
             {
                 tutorialButtonNext.Visible = tutorialButtonNext.Enabled = false;
             }
-
-            file_path = "..\\..\\graphics\\tutorial\\" + lang + "\\";
-            this.BackgroundImage = Image.FromFile(file_path + tutorial_count.ToString() + ".png");
+            
+            this.BackgroundImage = Image.FromFile(file_path + tutorial_count.ToString() + ".jpg"); // loads tutorial background image
         }
 
+        /// <summary>
+        /// Method <c>buttonExit_Click</c> closes the form upon clicking the button.
+        /// </summary>
+        private void tutorialButtonExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        /// <summary>
+        /// Method <c>tutorial_FormClosing</c> enables menu window and its timer upon closing the tutorial window.
+        /// </summary>
         private void tutorial_FormClosing(object sender, FormClosingEventArgs e)
         {
             MenuWindow.Visible = MenuWindow.Enabled = true;
-            MenuWindow.timer1.Enabled = true;
+            MenuWindow.timer.Enabled = true;
         }
     }
 }

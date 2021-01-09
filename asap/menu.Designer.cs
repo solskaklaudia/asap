@@ -1,4 +1,6 @@
 ﻿
+using System.Media;
+
 namespace asap
 {
     partial class menu
@@ -7,13 +9,25 @@ namespace asap
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
-        private int tile_counter = 1;
-        private string lang = "pl";
-        private int menubutton_width;
-        private int menubutton_height;
 
+        /// <summary>Counter for animated background tile frames</summary>
+        private int tile_counter = 1;
+        /// <summary>Contains information about displayed text language</summary>
+        private string lang = "pl"; 
+        /// <summary>Menu button width</summary>
+        private int menubutton_width;
+        /// <summary>Menu button height</summary>
+        private int menubutton_height;
+        /// <summary>Background music file</summary>
+        public SoundPlayer music;
+        /// <summary>If background music shall be playing; true if yes</summary>
+        public bool musicPlaying = true;
+
+        /// <summary>Game window form</summary>
         public game GameWindow;
+        /// <summary>Education window form</summary>
         public education EduWindow;
+        /// <summary>Tutorial window form</summary>
         public tutorial TutWindow;
 
         /// <summary>
@@ -39,8 +53,8 @@ namespace asap
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(menu));
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.timer = new System.Windows.Forms.Timer(this.components);
+            this.bgImage = new System.Windows.Forms.PictureBox();
             this.playButton = new System.Windows.Forms.PictureBox();
             this.tutorialButton = new System.Windows.Forms.PictureBox();
             this.educationButton = new System.Windows.Forms.PictureBox();
@@ -51,31 +65,35 @@ namespace asap
             this.radioLang1 = new System.Windows.Forms.RadioButton();
             this.radioLang2 = new System.Windows.Forms.RadioButton();
             this.buttonClose = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.settingsPanel = new System.Windows.Forms.Panel();
+            this.musicControl = new System.Windows.Forms.CheckBox();
+            this.musicLabel = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.bgImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.playButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tutorialButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.educationButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gear)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.credits)).BeginInit();
+            this.settingsPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // timer1
+            // timer
             // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 40;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.timer.Enabled = true;
+            this.timer.Interval = 40;
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
-            // pictureBox1
+            // bgImage
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1920, 1080);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.bgImage.BackColor = System.Drawing.Color.Transparent;
+            this.bgImage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bgImage.BackgroundImage")));
+            this.bgImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bgImage.Location = new System.Drawing.Point(0, 0);
+            this.bgImage.Name = "bgImage";
+            this.bgImage.Size = new System.Drawing.Size(1920, 1080);
+            this.bgImage.TabIndex = 0;
+            this.bgImage.TabStop = false;
             // 
             // playButton
             // 
@@ -165,7 +183,7 @@ namespace asap
             // 
             this.TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TextBox.Enabled = false;
-            this.TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.TextBox.Location = new System.Drawing.Point(100, 220);
             this.TextBox.Margin = new System.Windows.Forms.Padding(10);
             this.TextBox.Name = "TextBox";
@@ -177,31 +195,27 @@ namespace asap
             // radioLang1
             // 
             this.radioLang1.AutoSize = true;
-            this.radioLang1.Enabled = false;
-            this.radioLang1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.radioLang1.Location = new System.Drawing.Point(203, 318);
+            this.radioLang1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.radioLang1.Location = new System.Drawing.Point(31, 19);
             this.radioLang1.Name = "radioLang1";
-            this.radioLang1.Size = new System.Drawing.Size(67, 24);
+            this.radioLang1.Size = new System.Drawing.Size(86, 30);
             this.radioLang1.TabIndex = 12;
             this.radioLang1.TabStop = true;
             this.radioLang1.Text = "polski";
             this.radioLang1.UseVisualStyleBackColor = true;
-            this.radioLang1.Visible = false;
             this.radioLang1.CheckedChanged += new System.EventHandler(this.radioLang_CheckedChanged);
             // 
             // radioLang2
             // 
             this.radioLang2.AutoSize = true;
-            this.radioLang2.Enabled = false;
-            this.radioLang2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.radioLang2.Location = new System.Drawing.Point(203, 360);
+            this.radioLang2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.radioLang2.Location = new System.Drawing.Point(31, 55);
             this.radioLang2.Name = "radioLang2";
-            this.radioLang2.Size = new System.Drawing.Size(79, 24);
+            this.radioLang2.Size = new System.Drawing.Size(102, 30);
             this.radioLang2.TabIndex = 13;
             this.radioLang2.TabStop = true;
             this.radioLang2.Text = "English";
             this.radioLang2.UseVisualStyleBackColor = true;
-            this.radioLang2.Visible = false;
             this.radioLang2.CheckedChanged += new System.EventHandler(this.radioLang_CheckedChanged);
             // 
             // buttonClose
@@ -220,15 +234,52 @@ namespace asap
             this.buttonClose.Visible = false;
             this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
+            // settingsPanel
+            // 
+            this.settingsPanel.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.settingsPanel.Controls.Add(this.musicControl);
+            this.settingsPanel.Controls.Add(this.musicLabel);
+            this.settingsPanel.Controls.Add(this.radioLang1);
+            this.settingsPanel.Controls.Add(this.radioLang2);
+            this.settingsPanel.Enabled = false;
+            this.settingsPanel.Location = new System.Drawing.Point(133, 288);
+            this.settingsPanel.Name = "settingsPanel";
+            this.settingsPanel.Size = new System.Drawing.Size(767, 482);
+            this.settingsPanel.TabIndex = 15;
+            this.settingsPanel.Visible = false;
+            // 
+            // musicControl
+            // 
+            this.musicControl.AutoSize = true;
+            this.musicControl.Checked = true;
+            this.musicControl.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.musicControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.musicControl.Location = new System.Drawing.Point(31, 187);
+            this.musicControl.Name = "musicControl";
+            this.musicControl.Size = new System.Drawing.Size(15, 14);
+            this.musicControl.TabIndex = 17;
+            this.musicControl.UseVisualStyleBackColor = true;
+            this.musicControl.CheckedChanged += new System.EventHandler(this.musicControl_CheckedChanged);
+            // 
+            // musicLabel
+            // 
+            this.musicLabel.AutoSize = true;
+            this.musicLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.musicLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.musicLabel.Location = new System.Drawing.Point(12, 145);
+            this.musicLabel.Name = "musicLabel";
+            this.musicLabel.Size = new System.Drawing.Size(93, 26);
+            this.musicLabel.TabIndex = 16;
+            this.musicLabel.Text = "Muzyka:";
+            // 
             // menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.settingsPanel);
             this.Controls.Add(this.buttonClose);
-            this.Controls.Add(this.radioLang2);
-            this.Controls.Add(this.radioLang1);
             this.Controls.Add(this.TextBox);
             this.Controls.Add(this.credits);
             this.Controls.Add(this.gear);
@@ -236,36 +287,55 @@ namespace asap
             this.Controls.Add(this.educationButton);
             this.Controls.Add(this.tutorialButton);
             this.Controls.Add(this.playButton);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.bgImage);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ASAP - As Soon As Possible";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bgImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.playButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tutorialButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.educationButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gear)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.credits)).EndInit();
+            this.settingsPanel.ResumeLayout(false);
+            this.settingsPanel.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pictureBox1;
+        /// <summary>Background image</summary>
+        private System.Windows.Forms.PictureBox bgImage;
+        /// <summary>Menu button to start the game</summary>
         private System.Windows.Forms.PictureBox playButton;
+        /// <summary>Menu button to open the tutorial</summary>
         private System.Windows.Forms.PictureBox tutorialButton;
+        /// <summary>Menu button to open education section</summary>
         private System.Windows.Forms.PictureBox educationButton;
+        /// <summary>Menu button to close the program</summary>
         private System.Windows.Forms.PictureBox exitButton;
+        /// <summary>Opens game settings</summary>
         private System.Windows.Forms.PictureBox gear;
+        /// <summary>Opens game credits</summary>
         private System.Windows.Forms.PictureBox credits;
+        /// <summary>Displays settings/credits text</summary>
         private System.Windows.Forms.RichTextBox TextBox;
+        /// <summary>Language 1 radiobutton</summary>
         private System.Windows.Forms.RadioButton radioLang1;
+        /// <summary>Language 2 radiobutton</summary>
         private System.Windows.Forms.RadioButton radioLang2;
+        /// <summary>Closing the settings / credits</summary>
         private System.Windows.Forms.Button buttonClose;
-        public System.Windows.Forms.Timer timer1;
+        /// <summary>Menu form timer for background animation</summary>
+        public System.Windows.Forms.Timer timer;
+        /// <summary>Panel for settings objects</summary>
+        private System.Windows.Forms.Panel settingsPanel;
+        /// <summary>Label displaying music setting text</summary>
+        private System.Windows.Forms.Label musicLabel;
+        /// <summary>For enabling/disabling the music</summary>
+        private System.Windows.Forms.CheckBox musicControl;
     }
 }
