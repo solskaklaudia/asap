@@ -1,0 +1,131 @@
+...
+1
+2
+Bruh where have you been, I've been looking for you everywhere.
+smile
+
+Dude it's not that easy to find a toilet here.
+3
+4
+He he, I know the pain.
+happy
+
+You must be bad at looking.
+3
+4
+Nah bruh, I've run around the whole nearby area.
+neutral
+
+Didn't you overheat too much in this sun?
+6
+6
+Bro, no idea.
+head
+
+Have you found something interesting in the meantime?
+5
+5
+There's some dude selling fish sandwiches nearby.
+smile
+
+...
+7
+8
+They smell terrible, but taste really good.
+red_happy
+red skin
+...
+7
+8
+We came here to get some heat afterall, eh?
+red_happy
+red skin
+I see you tan like a lobster.
+9
+9
+You're laughing, but this is a process!
+sw_happy
+sweating
+Oh damn, dude, you're very red.
+9
+9
+You're laughing, but this is a process!
+sw_happy
+sweating
+...
+10
+10
+First you have to be red then to be able to turn brown as..
+sw_smile
+
+...
+11
+12
+As... uh... what is brown?
+sw_neutral
+
+Your hair.
+13
+13
+Dude, being so uniformly brown... it's almost like being bald.
+red_smile
+dry skin
+Farming fertilizer.
+13
+13
+He, he... good one!
+red_happy
+dry skin
+...
+14
+15
+Eeh... I'm not too good at thinking... today...
+red_head
+dizziness
+Bruh you feeling alright?
+16
+17
+I don't know dude... I feel dizzy, and my heart beats so fast... probably from the running...
+red_head
+too fast heartbeat
+I don't see any difference from usual in that regard.
+18
+19
+You know, these fish sandwiches... were not... the best... idea.
+nausea
+nausea
+Rest for a while and it'll be aight.
+18
+19
+You know, these fish sandwiches... were not... the best... idea.
+nausea
+nausea
+This doesn't sound good...
+18
+19
+You know, these fish sandwiches... were not... the best... idea..
+nausea
+nausea
+Come swimming, you'll get better in no time.
+20
+20
+Mwaybye eet wold hyelpw...
+muscle
+slurred speech
+Maybe I'll get you something to drink...
+20
+20
+Mwaybye eet wold hyelpw...
+muscle
+slurred speech
+...
+0
+0
+...
+muscle
+
+...
+0
+0
+...
+muscle

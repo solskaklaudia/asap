@@ -1,0 +1,173 @@
+...
+1
+2
+You're finally here.
+angry
+
+Good morning, excuse me Sir for being late.
+3
+3
+Our business activity is quickly developing in recent years.
+suspicious
+
+Present me your offer.
+3
+3
+Finally, some real man. Our business activity is quickly developing in recent years.
+neutral
+
+...
+4
+5
+Our specialists' analysis suggest that this trend will continue for at least one year.
+neutral_pale
+pale skin
+What investing in you can bring me?
+6
+6
+Pure profit ... ...
+neutral_pale
+
+And how much money will I make?
+6
+6
+It depends on how much you invest. ... ...
+angry_pale
+
+...
+7
+7
+EKHEM.
+cough
+
+...
+8
+9
+Excuse me for a second.
+breathe
+shortness of breath
+...
+10
+10
+EEEKHEEEM.
+empty
+prolonged cough
+Is everything alright?
+10
+10
+EEEKHEEEM.
+empty
+prolonged cough
+...
+11
+12
+Back to the topic.
+tired
+feeling faint or tired
+Is it contagious?
+13
+14
+No.
+tired
+
+How much will I earn if I invest 50 000 $?
+15
+16
+Accorcing to our analysts, such low amount would not impact our efficiency in any meaningful way. Big risk can bring big profit.
+tired
+
+Are you sure?
+17
+17
+...
+belly
+abdominal pain
+Ok, let's get back to business.
+17
+17
+...
+belly
+abdominal pain
+I must think about it.
+17
+17
+...
+belly
+abdominal pain
+You have an interesting point Sir.
+17
+17
+...
+belly
+abdominal pain
+...
+18
+18
+-xcuseme
+nausea
+nausea
+...
+19
+20
+EKHM.
+empty
+
+Are you sure you're feeling alright Sir? Shall I call for help?
+21
+22
+I need no help. Let's continue the negotiations, there won't be better time than today.
+tired_sweat
+sweating
+Maybe we shall continue these negotiations another time.
+21
+22
+Let's continue the negotiations, there won't be better time than today.
+tired_sweat
+sweating
+Okaaay...
+23
+24
+200 000 $ would be very optimal... for the... start...
+head
+dizziness
+Hmm...
+23
+24
+200 000 $ would be very optimal... for the... start...
+head
+dizziness
+I see how it is...
+25
+26
+So what is your... final.. offer?
+breathe_sweat
+
+I think I know now.
+25
+26
+So what is your... final.. offer?
+breathe_sweat
+
+Let's go all in. 1 000 000 $.
+27
+27
+...
+chest
+chest pain or discomfort
+1 000 $. That's the maximum amount it's worth to me.
+27
+27
+...
+chest
+chest pain or discomfort
+...
+27
+27
+...
+chest
+
+...
+27
+27
+...
+chest
