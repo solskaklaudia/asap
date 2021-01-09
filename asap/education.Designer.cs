@@ -1,4 +1,6 @@
 ﻿
+using System.Collections.Generic;
+
 namespace asap
 {
     partial class education
@@ -8,10 +10,14 @@ namespace asap
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
+        /// <summary>Menu window form</summary>
         public menu MenuWindow;
+        /// <summary>Contains information about displayed text language</summary>
         public string lang;
-
-        private string button_clicked;
+        /// <summary>List containing arrays with info strings for all the illnesses</summary>
+        private List<string[]> illnesses = new List<string[]>();
+        /// <summary>List containing arrays with symptoms strings for all the illnesses</summary>
+        private List<string[]> illnesses_symptoms = new List<string[]>(); 
 
         /// <summary>
         /// Clean up any resources being used.
@@ -34,12 +40,14 @@ namespace asap
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(education));
             this.buttonExit = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.IllnessLabel = new System.Windows.Forms.Label();
-            this.IllnessDescription = new System.Windows.Forms.RichTextBox();
+            this.IllnessDescription = new System.Windows.Forms.Button();
+            this.PossibleSymptoms = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonExit
@@ -58,6 +66,7 @@ namespace asap
             // 
             // button1
             // 
+            this.button1.AccessibleDescription = "0";
             this.button1.BackColor = System.Drawing.Color.Salmon;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -72,6 +81,7 @@ namespace asap
             // 
             // button2
             // 
+            this.button2.AccessibleDescription = "1";
             this.button2.BackColor = System.Drawing.Color.Salmon;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -86,6 +96,7 @@ namespace asap
             // 
             // button3
             // 
+            this.button3.AccessibleDescription = "2";
             this.button3.BackColor = System.Drawing.Color.Salmon;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -101,30 +112,52 @@ namespace asap
             // IllnessLabel
             // 
             this.IllnessLabel.AutoSize = true;
-            this.IllnessLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.IllnessLabel.BackColor = System.Drawing.Color.Transparent;
+            this.IllnessLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.IllnessLabel.Location = new System.Drawing.Point(995, 49);
             this.IllnessLabel.Name = "IllnessLabel";
-            this.IllnessLabel.Size = new System.Drawing.Size(278, 63);
+            this.IllnessLabel.Size = new System.Drawing.Size(287, 63);
             this.IllnessLabel.TabIndex = 2;
             this.IllnessLabel.Text = "Choroba 1";
             // 
             // IllnessDescription
             // 
             this.IllnessDescription.Enabled = false;
+            this.IllnessDescription.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.IllnessDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.IllnessDescription.Location = new System.Drawing.Point(432, 143);
             this.IllnessDescription.Name = "IllnessDescription";
-            this.IllnessDescription.Size = new System.Drawing.Size(1399, 831);
-            this.IllnessDescription.TabIndex = 5;
-            this.IllnessDescription.Text = "Opis choroby 1";
+            this.IllnessDescription.Padding = new System.Windows.Forms.Padding(20);
+            this.IllnessDescription.Size = new System.Drawing.Size(915, 831);
+            this.IllnessDescription.TabIndex = 7;
+            this.IllnessDescription.Text = "Opis choroby";
+            this.IllnessDescription.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.IllnessDescription.UseVisualStyleBackColor = true;
+            // 
+            // PossibleSymptoms
+            // 
+            this.PossibleSymptoms.BackColor = System.Drawing.Color.MistyRose;
+            this.PossibleSymptoms.Enabled = false;
+            this.PossibleSymptoms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PossibleSymptoms.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.PossibleSymptoms.Location = new System.Drawing.Point(1383, 143);
+            this.PossibleSymptoms.Name = "PossibleSymptoms";
+            this.PossibleSymptoms.Padding = new System.Windows.Forms.Padding(20);
+            this.PossibleSymptoms.Size = new System.Drawing.Size(477, 831);
+            this.PossibleSymptoms.TabIndex = 8;
+            this.PossibleSymptoms.Text = "Możliwe symptomy";
+            this.PossibleSymptoms.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.PossibleSymptoms.UseVisualStyleBackColor = false;
             // 
             // education
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.ControlBox = false;
+            this.Controls.Add(this.PossibleSymptoms);
             this.Controls.Add(this.IllnessDescription);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -144,11 +177,19 @@ namespace asap
 
         #endregion
 
+        /// <summary>Button for exiting the education section and going back to the main menu</summary>
         private System.Windows.Forms.Button buttonExit;
+        /// <summary>Button for selecting illness information 1</summary>
         private System.Windows.Forms.Button button1;
+        /// <summary>Button for selecting illness information 2</summary>
         private System.Windows.Forms.Button button2;
+        /// <summary>Button for selecting illness information 3</summary>
         private System.Windows.Forms.Button button3;
+        /// <summary>Label displaying the illness name</summary>
         private System.Windows.Forms.Label IllnessLabel;
-        private System.Windows.Forms.RichTextBox IllnessDescription;
+        /// <summary>Displays illness description</summary>
+        private System.Windows.Forms.Button IllnessDescription;
+        /// <summary>Displays illness symptoms</summary>
+        private System.Windows.Forms.Button PossibleSymptoms;
     }
 }

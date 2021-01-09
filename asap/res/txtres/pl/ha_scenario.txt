@@ -1,0 +1,173 @@
+...
+1
+2
+W końcu jest Pan na miejscu.
+angry
+
+Dzień dobry, przepraszam Pana za opóźnienie.
+3
+3
+Nasza działalność prężnie się rozwija w ostatnich latach.
+suspicious
+
+Przedstaw mi swoją ofertę.
+3
+3
+W końcu, konkretny człowiek. Nasza działalność prężnie się rozwija w ostatnich latach.
+neutral
+
+...
+4
+5
+Analizy naszych specjalistów wskazują na to, że ten trend utrzyma się co najmniej przez kolejny rok.
+neutral_pale
+bladość skóry
+Co może mi przynieść inwestycja w was?
+6
+6
+Czysty zysk ... ...
+neutral_pale
+
+A ile pieniędzy zarobię?
+6
+6
+To zależy od inwestowanej kwoty. ... ...
+angry_pale
+
+...
+7
+7
+EKHEM.
+cough
+
+...
+8
+9
+Przepraszam na chwilę.
+breathe
+duszność
+...
+10
+10
+EEEKHEEEM.
+empty
+długotrwały kaszel
+Wszystko ok?
+10
+10
+EEEKHEEEM.
+empty
+długotrwały kaszel
+...
+11
+12
+Kontynuując.
+tired
+osłabienie lub zmęczenie
+Czy to jest zaraźliwe?
+13
+14
+Nie.
+tired
+
+Ile mogłoby mi przynieść wniesienie kapitału o wysokości 50 000 $?
+15
+16
+Według danych naszych analityków tak niska kwota nie zwiększy istotnie wydajności działalności. Duże ryzyko natomiast może przynieść duży zysk.
+tired
+
+Ale na pewno?
+17
+17
+...
+belly
+ból w nadbrzuszu
+Ok, to wróćmy do inwestycji.
+17
+17
+...
+belly
+ból w nadbrzuszu
+Muszę się nad tym zastanowić.
+17
+17
+...
+belly
+ból w nadbrzuszu
+Ciekawie Pan myśli.
+17
+17
+...
+belly
+ból w nadbrzuszu
+...
+18
+18
+-praszm
+nausea
+nudności
+...
+19
+20
+EKHM.
+empty
+
+Na pewno czuje się Pan w porządku? Może wezwać pomoc?
+21
+22
+Nie potrzebuję pomocy. Kontynuujmy negocjacje, nie będzie lepszego momentu niż dzisiaj.
+tired_sweat
+potliwość
+Może dokończymy te negocjacje w innym terminie.
+21
+22
+Kontynuujmy negocjacje, nie będzie lepszego momentu niż dzisiaj.
+tired_sweat
+potliwość
+Okeeej...
+23
+24
+Kwota 200 000 $ byłaby optymalna na ... dobry... początek...
+head
+zawroty głowy
+Hmm...
+23
+24
+Kwota 200 000 $ byłaby optymalna na ... dobry... początek...
+head
+zawroty głowy
+A więc to tak...
+25
+26
+Więc jaka jest twoja... finalna... oferta?
+breathe_sweat
+
+Chyba już wiem.
+25
+26
+Więc jaka jest twoja... finalna... oferta?
+breathe_sweat
+
+Idziemy na całość. 1 000 000 $.
+27
+27
+...
+chest
+ból lub dyskomfort w klatce piersiowej
+1 000 $. Maksymalnie tyle jest to dla mnie warte.
+27
+27
+...
+chest
+ból lub dyskomfort w klatce piersiowej
+...
+27
+27
+...
+chest
+
+...
+27
+27
+...
+chest

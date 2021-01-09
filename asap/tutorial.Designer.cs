@@ -8,10 +8,14 @@ namespace asap
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
+        /// <summary>Menu window form.</summary>
         public menu MenuWindow;
+        /// <summary>Contains information about displayed text language</summary>
         public string lang;
+        /// <summary>Relative file path to image resources</summary>
         private string file_path;
-        private int tutorial_count = 1;
+        /// <summary>Tutorial page number</summary>
+        private int tutorial_count = 1; 
 
         /// <summary>
         /// Clean up any resources being used.
@@ -45,7 +49,7 @@ namespace asap
             this.tutorialButtonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.tutorialButtonExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.tutorialButtonExit.ForeColor = System.Drawing.Color.White;
-            this.tutorialButtonExit.Location = new System.Drawing.Point(31, 26);
+            this.tutorialButtonExit.Location = new System.Drawing.Point(22, 24);
             this.tutorialButtonExit.Name = "tutorialButtonExit";
             this.tutorialButtonExit.Size = new System.Drawing.Size(59, 52);
             this.tutorialButtonExit.TabIndex = 19;
@@ -55,7 +59,7 @@ namespace asap
             // 
             // tutorialButtonPrevious
             // 
-            this.tutorialButtonPrevious.BackColor = System.Drawing.Color.Salmon;
+            this.tutorialButtonPrevious.BackColor = System.Drawing.Color.IndianRed;
             this.tutorialButtonPrevious.Enabled = false;
             this.tutorialButtonPrevious.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.tutorialButtonPrevious.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -71,7 +75,7 @@ namespace asap
             // 
             // tutorialButtonNext
             // 
-            this.tutorialButtonNext.BackColor = System.Drawing.Color.Salmon;
+            this.tutorialButtonNext.BackColor = System.Drawing.Color.IndianRed;
             this.tutorialButtonNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.tutorialButtonNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.tutorialButtonNext.ForeColor = System.Drawing.Color.White;
@@ -104,8 +108,11 @@ namespace asap
 
         #endregion
 
+        /// <summary>Closing tutorial window button</summary>
         private System.Windows.Forms.Button tutorialButtonExit;
+        /// <summary>Next tutorial page nutton</summary>
         private System.Windows.Forms.Button tutorialButtonPrevious;
+        /// <summary>Previous tutorial page button</summary>
         private System.Windows.Forms.Button tutorialButtonNext;
     }
 }

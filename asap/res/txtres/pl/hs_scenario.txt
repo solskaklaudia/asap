@@ -1,0 +1,131 @@
+...
+1
+2
+Ziom, gdzie cię na tyle wywiało? Szukałem cię wszędzie.
+smile
+
+Stary, nie tak łatwo znaleźć tu toaletę.
+3
+4
+He he, znam ten ból.
+happy
+
+To chyba słabo szukałeś.
+3
+4
+Nie no, całą okolicę przebiegłem.
+neutral
+
+Nie zgrzałeś się za bardzo na tym słońcu?
+6
+6
+Typie, bo ja wiem.
+head
+
+Znalazłeś coś ciekawego w międzyczasie?
+5
+5
+Nieopodal jakiś gościu sprzedaje kanapki rybne.
+smile
+
+...
+7
+8
+Strasznie śmierdzą, ale smakowały dobrze.
+red_happy
+zaczerwienienie skóry
+...
+7
+8
+Po to tu przyjechaliśmy, aby się trochę wygrzać, nie?
+red_happy
+zaczerwienienie skóry
+Widzę, że opalasz się na raka.
+9
+9
+Śmiejesz się, ale to jest proces!
+sw_happy
+potliwość
+O kurde stary, ale zczerwieniałeś.
+9
+9
+Śmiejesz się, ale to jest proces!
+sw_happy
+potliwość
+...
+10
+10
+Najpierw trzeba być czerwonym, aby potem móc stać się brązowym jak...
+sw_smile
+
+...
+11
+12
+... jak... uh... co jest brązowe?
+sw_neutral
+
+Twoje włosy.
+13
+13
+Weź, być tak jednolicie brązowym... to prawie jak być łysym.
+red_smile
+suchość skóry
+Nawóz na roli.
+13
+13
+He, he... dobre!
+red_happy
+suchość skóry
+...
+14
+15
+Eeh... nie myślę dzisiaj... za dobrze...
+red_head
+zawroty głowy
+Stary, dobrze się czujesz?
+16
+17
+Nie wiem typie, w głowie mi się kręci... I serducho mi nawala, chyba od tego biegania...
+red_head
+zbyt szybkie tętno
+Nie widzę większych odstępstw od twojej normy.
+18
+19
+Wiesz, te kanapki z rybą... to jednak... nie był... za dobry... pomysł.
+nausea
+nudności
+Odpocznij chwilę i będzie git.
+18
+19
+Wiesz, te kanapki z rybą... to jednak... nie był... za dobry... pomysł.
+nausea
+nudności
+To nie brzmi za dobrze...
+18
+19
+Wiesz, te kanapki z rybą... to jednak... nie był... za dobry... pomysł.
+nausea
+nudności
+Chodź popływać to będzie ci lepiej.
+20
+20
+Mwże cuoś bwy to dauło...
+muscle
+niewyraźna mowa
+Może przyniosę ci coś do picia...
+20
+20
+Mwże cuoś bwy to dauło...
+muscle
+niewyraźna mowa
+...
+0
+0
+...
+muscle
+
+...
+0
+0
+...
+muscle

@@ -1,0 +1,161 @@
+...
+1
+2
+Witaj skarbie, jak ci mija dzień?
+happy
+
+Oj zły dzień, szkoda gadać ciociu...
+3
+4
+Ojej, przykro mi to słyszeć. Mam nadzieję, że moja szarlotka poprawi ci humor.
+sad
+
+Bardzo miło, dziękuję za troskę! Czy ja czuję zapach ciasta?
+3
+4
+Piekę właśnie szarlotkę!
+neutral
+
+Ooo, a kiedy będzie gotowa?
+5
+6
+Za jakieś pół godzinki, ale musi jeszcze najpierw ostygnąć.
+happy
+
+Tak się składa, że akurat nie jestem głodna...
+5
+6
+Nie szkodzi, odłożę ci na potem. No chyba, że mąż się do niej dorwie przed tobą.
+happy
+
+A jak tobie mija dzień, ciociu?
+7
+8
+Oj kochanie, dzień mam przemiły, starość też radość! Tylko zdrowie za radością nie nadąża.
+neutral
+
+Czy u ciebie dzisiaj mniej pechowo, ciociu?
+7
+8
+Oj kochanie, dzień mam przemiły, starość też radość! Tylko zdrowie za radością nie nadąża.
+neutral
+
+Coś się stało?
+9
+9
+Oj, nic poważnego. Lata już nie te i oczy już nie te. Coraz mniej wyraźnie widzę.
+vision
+niewyraźne widzenie
+Ja uważam, że ciocia trzyma się świetnie.
+12
+13
+A dziękuję, bardzo miło mi to słyszeć.
+happy
+
+...
+10
+11
+Dzisiaj to szczególnie jakoś niewyraźnie, mało co a bym soli do ciasta nasypała zamiast cukru.
+neutral
+
+Myślałaś, by iść z tym do okulisty?
+16
+17
+Oh ojej, coś mi się w głowie zakręciło.
+head
+zawroty głowy
+Cioci to by się przydał odpoczynek.
+16
+17
+Oh ojej, coś mi się w głowie zakręciło.
+head
+zawroty głowy
+Nawet wybornie, niczym dobre wino bym powiedziała.
+14
+15
+Skarbie, przesadnie mi schlebiasz. Z takimi zmarszczkami?
+happy
+
+Jakby ciocia się ubrała młodzieżowo to i by za moją koleżankę uszła.
+14
+15
+Skarbie, przesadnie mi schlebiasz. Z takimi zmarszczkami?
+happy
+
+Taka jest prawda.
+16
+17
+Oh ojej, coś mi się w głowie zakręciło.
+head
+zawroty głowy
+Oj, takie żarciki no.
+16
+17
+Oh ojej, coś mi się w głowie zakręciło.
+head
+zawroty głowy
+Głowa cię boli?
+18
+19
+Zabolało mocno nagle... Chyba pójdę się położyć.
+head
+ból głowy
+To niedobrze...
+18
+19
+Chyba pójdę się położyć.
+head
+ból głowy
+To może nie być dobry pomysł.
+20
+20
+Oj skarbie, w moim wieku to się zdarza...
+sad
+
+Niech ciocia idzie odpoczywać.
+20
+20
+Popilnujesz dla mnie ciasta?
+sad
+
+...
+21
+22
+...
+nausea
+nudności
+Ciociu?
+23
+24
+...
+drooplip
+opadanie kącika ust
+Wszystko w porządku?
+23
+24
+...
+drooplip
+
+Jesteś w stanie unieść obie ręce?
+25
+25
+...
+arm
+zaburzenia ruchu lub czucia po jednej stronie ciała
+Musimy zabrać cię do lekarza.
+25
+25
+Alwe skwarbwie...
+drooplip
+niewyraźna mowa
+...
+25
+25
+...
+drooplip
+
+...
+25
+25
+...
+drooplip

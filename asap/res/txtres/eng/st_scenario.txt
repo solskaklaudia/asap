@@ -1,0 +1,161 @@
+...
+1
+2
+Welcome my dear, how is your day?
+happy
+
+Oh it's been bad, nothing worth talking about...
+3
+4
+Oh I'm sad to hear that. I hope I can cheer you up with my apple pie.
+sad
+
+It's been great, thank you for asking! Do I smell a pie?
+3
+4
+I'm making an apple pie!
+neutral
+
+Ooo, when is it ready?
+5
+6
+In half an hour, but it also has to cool down first.
+happy
+
+Oh, I'm not really hungry right now...
+5
+6
+Don't worry, it can wait for you. Unless my hubbie gets to it before you do.
+happy
+
+And how is your day auntie?
+7
+8
+My dear, it's been great! Only the health not as great.
+neutral
+
+Has your day been less unlucky than mine today?
+7
+8
+My dear, it's been great! Only the health not as great.
+neutral
+
+Did something happen?
+9
+9
+Oh, nothing serious. I'm not as young anymore and so are my eyes. I'm seeing less and less clearly.
+vision
+blurred vision
+I think that auntie is doing just fine.
+12
+13
+Oh thank you, it's very nice to hear.
+happy
+
+...
+10
+11
+Especially today, I almost mistook salt for sugar and put it into the pie.
+neutral
+
+Did you consider visiting an oculist?
+16
+17
+Oh dear, I feel very dizzy.
+head
+dizziness
+Auntie could use some rest.
+16
+17
+Oh dear, I feel very dizzy.
+head
+dizziness
+Excellent even I'd say, like an old wine.
+14
+15
+Dear, you're flatteting me too much. With my wrinkles?
+happy
+
+If auntie wore some youngst fashion clothes she could look like my peer.
+14
+15
+Dear, you're flatteting me too much. With my wrinkles?
+happy
+
+That's the truth though.
+16
+17
+Oh dear, I feel very dizzy.
+head
+dizziness
+Oj, takie żarciki no.
+16
+17
+Oh dear, I feel very dizzy.
+head
+dizziness
+Does your head hurt?
+18
+19
+It hurt so suddenly... I think I'll go lie down.
+head
+headache
+To niedobrze...
+18
+19
+I think I'll go lie down.
+head
+headache
+That may not be a good idea.
+20
+20
+Oh dear, it happens my age sometimes...
+sad
+
+Auntie should rest.
+20
+20
+Would you keep an eye on the pie?
+sad
+
+...
+21
+22
+...
+nausea
+nausea
+Auntie?
+23
+24
+...
+drooplip
+drooping corner of the mouth
+Is everything ok?
+23
+24
+...
+drooplip
+
+Can you raise both of your arms?
+25
+25
+...
+arm
+inability to move or feel on one side of the body
+We must take you to the doctor.
+25
+25
+Bwut dfear...
+drooplip
+slurred speech
+...
+25
+25
+...
+drooplip
+
+...
+25
+25
+...
+drooplip
